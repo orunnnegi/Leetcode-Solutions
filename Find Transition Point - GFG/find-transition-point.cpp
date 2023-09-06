@@ -23,7 +23,7 @@ int main() {
 
 int transitionPoint(int arr[], int n) {
     // code here
-    int index= lower_bound(arr, arr+n, 1)-arr;
+    int index= upper_bound(arr, arr+n, 0)-arr;
     if(index==n) return -1;
     return index;
 }
